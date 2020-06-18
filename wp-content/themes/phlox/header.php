@@ -29,8 +29,9 @@ do_action( "auxin_before_head_open", $post );
 
 <body <?php body_class(); auxin_dom_attributes( 'body' );?>>
 
+
 <?php do_action( "auxin_after_body_open", $post ); ?>
 
-<div id="inner-body">
+<div style="background-color : <?= get_theme_mod('header_background'); ?>!important" id="inner-body">
 
 <?php do_action( "auxin_after_inner_body_open", $post );
